@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-entity position="0 0.5 5.5 ">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-assets>
+            <a-asset-item id="bici-obj" src="Bici.obj"></a-asset-item>
+            <a-asset-item id="motor" src="motor.obj"></a-asset-item>
+        </a-assets>
+        <a-obj-model src="#bici-obj" material="src: rusty_metal_02_diff_4k.jpg; roughness:rusty_metal_02_rough_4k.jpg ; metalness: 0.2; normalMap:rusty_metal_02_nor_4k.jpg "></a-obj-model>
+        <a-entity position="4.4 -0.5 0">
+            <a-obj-model src="#motor" material="color: grey"></a-obj-model>
+        </a-entity> 
+        <a-sky src="fondo.jpg"></a-sky>
+
+    </a-scene>
+  </body>
+</html>
